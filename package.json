@@ -1,0 +1,30 @@
+{
+  "name": "urlfile",
+  "description": "Parse and create .url (bookmark) files",
+  "version": "0.0.0",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahamas10/node-urlfile.git"
+  },
+  "scripts": {
+    "test": "for f in tests/*.js; do echo \"$f\"; node \"$f\" || exit 1; echo; done; echo 'Passed!'"
+  },
+  "dependencies": {
+    "iniparser": "~1.0.5"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [
+    "url",
+    ".url",
+    "bookmarks",
+    "favorites",
+    "ie",
+    "internet explorer"
+  ]
+}
