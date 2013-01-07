@@ -17,8 +17,8 @@ Parse the URL file async
 
 ``` js
 var urlfile = require('urlfile');
-urlfile.parseURLFile('daveeddy.com.url', function(err, data) {
-  // data => 'http://www.daveeddy.com
+urlfile.parseURLFile('daveeddy.com.url', function(err, url) {
+  // url => 'http://www.daveeddy.com'
 });
 ```
 
@@ -35,7 +35,7 @@ Parse a URL file string
 ``` js
 var urlfile = require('urlfile');
 var url = urlfile.parseString('[InternetShortcut]\r\nURL=http://www.daveeddy.com');
-// url => 'http://www.daveeddy.com
+// url => 'http://www.daveeddy.com'
 ```
 
 Create a URL file string
@@ -49,7 +49,7 @@ var s = urlfile.createURL('http://www.daveeddy.com');
 Functions
 ---------
 
-* urlfile.parseURLFile(file, function(err, data))
+* urlfile.parseURLFile(file, function(err, url))
 * urlfile.parseURLFileSync(file)
 * urlfile.parseString(string)
 * urlfile.createURL(url)
